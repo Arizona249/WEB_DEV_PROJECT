@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Cube Loader</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background: black;
+  font-family: sans-serif;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  animation: spin 2s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  border-radius: 8px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#navbar {
+  width: 100%;
+  height: 60px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border-radius: 6px;
+}
+
+#main-content {
+  /* display: none; */
+  /* padding: 40px;
+  color: white; */
+/* } */ */
+
+  </style>
+</head>
+<body>
+  <!-- Loader Section -->
+  <div id="loader">
+    <div class="cube"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo" id="logoTarget"></div>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <h1>Welcome to the Website</h1>
+    <div class="svg">
+         <svg style="width:0; height:0;" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="cube_side">
+            <rect width="50" height="50" fill="#FC9800"/>
+            <rect y="150" width="50" height="50" fill="#FC9800"/>
+            <rect y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect y="50" width="50" height="50" fill="#FFBD1E"/>
+            <rect x="150" width="50" height="50" fill="#FC9800"/>
+            <rect x="150" y="150" width="50" height="50" fill="#FFAA00"/>
+            <rect x="150" y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="150" y="50" width="50" height="50" fill="#FFAA00"/>
+            <rect x="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="100" y="150" width="50" height="50" fill="#FC9800"/>
+            <rect x="100" y="100" width="50" height="50" fill="#FFBD1E"/>
+            <rect x="100" y="50" width="50" height="50" fill="#FFB304"/>
+            <rect x="50" width="50" height="50" fill="#FFAA00"/>
+            <rect x="50" y="150" width="50" height="50" fill="#FFB304"/>
+            <rect x="50" y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="50" y="50" width="50" height="50" fill="#FC9800"/>
+        </g>
+        <g id="cube_top">
+            <rect width="50" height="50" fill="#FFE929"/>
+            <rect y="150" width="50" height="50" fill="#FFE929"/>
+            <rect y="100" width="50" height="50" fill="#FFE65E"/>
+            <rect y="50" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" y="150" width="50" height="50" fill="#FFE65E"/>
+            <rect x="150" y="100" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" y="50" width="50" height="50" fill="#FFE65E"/>
+            <rect x="100" width="50" height="50" fill="#FFE36A"/>
+            <rect x="100" y="150" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="100" y="100" width="50" height="50" fill="#FFE36A"/>
+            <rect x="100" y="50" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="50" width="50" height="50" fill="#FFE65E"/>
+            <rect x="50" y="150" width="50" height="50" fill="#FFE929"/>
+            <rect x="50" y="100" width="50" height="50" fill="#FFE65E"/>
+            <rect x="50" y="50" width="50" height="50" fill="#FFE929"/>
+        </g>
+    </svg>
+    </div>
+
+  </div>
+
+  <!-- <script>
+    window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const cube = document.querySelector('.cube');
+  const navbar = document.getElementById('navbar');
+  const logoTarget = document.getElementById('logoTarget');
+  const content = document.getElementById('main-content');
+
+  setTimeout(() => {
+    // Stop animation
+    cube.style.animation = 'none';
+
+    // Move cube to navbar logo position
+    const cubeRect = cube.getBoundingClientRect();
+    const logoRect = logoTarget.getBoundingClientRect();
+
+    const dx = logoRect.left - cubeRect.left;
+    const dy = logoRect.top - cubeRect.top;
+    const scale = logoRect.width / cubeRect.width;
+
+    cube.style.transition = 'transform 1s ease-in-out';
+    cube.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
+
+    // Wait for transition to end
+    setTimeout(() => {
+      loader.style.display = 'none';
+      navbar.style.display = 'flex';
+      content.style.display = 'block';
+    }, 1000);
+  }, 3000); // simulate 3s load
+});
+
+  </script> -->
+</body>
+</html>

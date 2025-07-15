@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeDust.io</title>
+    <link rel="icon" href="../DEDUSTIMGS/DeDustlogo-removebg-preview.png">
+    <link rel="stylesheet" href="../CSS/pools.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--NAVBAR -->
+    <div class="maincontainer">
+        <nav class="navbar">
+            <div class="navitems1">
+            <img src="../DEDUSTIMGS/DeDustlogo-removebg-preview.png" alt="">
+            <span class="logo">DeDust</span>
+            <ul class="navbar-list">
+             <li>
+                <a href="index.html" >
+                    <svg width="64px" height="64px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z" fill="currentColor"></path> </g></svg>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="swap.html">
+                    <svg width="64px" height="64px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 1 -1 0 18.5 2.5)"> <g transform="matrix(0 -1 1 0 .5 16.5)"> <path d="m16 0v5h-5" transform="matrix(0 1 1 0 11 -11)"></path> <path d="m16 5c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"></path> </g> <g transform="matrix(0 1 -1 0 14 1)"> <path d="m16 0v5h-5" transform="matrix(0 1 1 0 11 -11)"></path> <path d="m16 5c-2.8366699-3.33333333-5.6700033-5-8.5-5-2.82999674 0-5.32999674 1-7.5 3"></path> </g> </g> </g></svg>
+                    Swap
+                </a>
+            </li>
+            <li>
+                <a href="pools.html" id="isactive">
+                    <svg width="64px" height="64px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>coin_2_line</title> <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Business" transform="translate(-336.000000, 0.000000)" fill-rule="nonzero"> <g id="coin_2_line" transform="translate(336.000000, 0.000000)"> <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero"> </path> <path d="M12,3 C14.3137,3 16.4562,3.40832 18.0577,4.10897 C18.8569,4.45864 19.5665,4.90083 20.0903,5.44258 C20.5746667,5.94359333 20.9354285,6.57080799 20.9921918,7.2989365 L21,7.5 L21,17.5 C21,18.3141 20.6187,19.0109 20.0903,19.5574 C19.5665,20.0992 18.8569,20.5414 18.0577,20.891 C16.4562,21.5917 14.3137,22 12,22 C9.6863,22 7.54381,21.5917 5.94233,20.891 C5.14307,20.5414 4.43348,20.0992 3.90973,19.5574 C3.42536333,19.0564417 3.06457632,18.4291896 3.00780881,17.7010622 L3,17.5 L3,7.5 C3,6.68589 3.38133,5.98914 3.90973,5.44258 C4.43348,4.90083 5.14307,4.45864 5.94233,4.10897 C7.54381,3.40832 9.6863,3 12,3 Z M19,15.4071 C18.7059,15.5847 18.3895,15.7458 18.0577,15.891 C16.4562,16.5917 14.3137,17 12,17 C9.6863,17 7.54381,16.5917 5.94233,15.891 C5.61046,15.7458 5.29406,15.5847 5,15.4071 L5,17.5 C5,17.6524 5.06638,17.8764 5.34763,18.1673 C5.63353,18.463 6.09551,18.775 6.74396,19.0587 C8.03791,19.6248 9.89543,20 12,20 C14.1046,20 15.9621,19.6248 17.256,19.0587 C17.9045,18.775 18.3665,18.463 18.6524,18.1673 C18.9336,17.8764 19,17.6524 19,17.5 L19,15.4071 Z M19,10.4071 C18.7059,10.5847 18.3895,10.7458 18.0577,10.891 C16.4562,11.5917 14.3137,12 12,12 C9.6863,12 7.54381,11.5917 5.94233,10.891 C5.61046,10.7458 5.29406,10.5847 5,10.4071 L5,12.5 C5,12.6524 5.06638,12.8764 5.34763,13.1673 C5.63353,13.463 6.09551,13.775 6.74396,14.0587 C8.03791,14.6248 9.89543,15 12,15 C14.1046,15 15.9621,14.6248 17.256,14.0587 C17.9045,13.775 18.3665,13.463 18.6524,13.1673 C18.9336,12.8764 19,12.6524 19,12.5 L19,10.4071 Z M12,5 C9.89543,5 8.03791,5.37518 6.74396,5.94128 C6.09551,6.22498 5.63353,6.53698 5.34763,6.8327 C5.06638,7.12362 5,7.34762 5,7.5 C5,7.65238 5.06638,7.87638 5.34763,8.1673 C5.63353,8.46302 6.09551,8.77502 6.74396,9.05872 C8.03791,9.62482 9.89543,10 12,10 C14.1046,10 15.9621,9.62482 17.256,9.05872 C17.9045,8.77502 18.3665,8.46302 18.6524,8.1673 C18.9336,7.87638 19,7.65238 19,7.5 C19,7.34762 18.9336,7.12362 18.6524,6.8327 C18.3665,6.53698 17.9045,6.22498 17.256,5.94128 C15.9621,5.37518 14.1046,5 12,5 Z" id="形状" fill="currentColor"> </path> </g> </g> </g> </g></svg>                    Pools
+                </a>
+            </li>
+            <li>
+                <a href="stake.html">
+                    <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 9.5C21 11.9853 16.9706 14 12 14M21 9.5C21 7.01472 16.9706 5 12 5C7.02944 5 3 7.01472 3 9.5M21 9.5V15C21 17.2091 16.9706 19 12 19M12 14C7.02944 14 3 11.9853 3 9.5M12 14V19M3 9.5V15C3 17.2091 7.02944 19 12 19M7 18.3264V13.2422M17 18.3264V13.2422" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    Stake
+                </a>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    <svg width="64px" height="64px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="currentColor" d="M320 320V128h384v192h192v192H128V320h192zM128 576h768v320H128V576zm256-256h256.064V192H384v128z"></path></g></svg>
+                    Portfolio</a>
+            </li>
+        </ul>
+            </div>
+            <div class="navitems2">
+                <a href=""><img src="../DEDUSTIMGS/dust.logo.gif" alt=""></a>
+                <span class="price"><a href="">$1.64</a></span>
+                <span class="searchicon-bg bgicon"><object data="../DEDUSTIMGS/search-alt-1-svgrepo-com.svg" type="image/svg+xml" class="searchicon navicon"></object></span>
+                <span class="earthicon-bg bgicon"><object data="../DEDUSTIMGS/globe-svgrepo-com.svg" type="image/svg+xml" class="navicon globeicon"></object></span>
+                <div class="connectwalletcontainer">
+                    <object data="/DEDUSTIMGS/wallet-money-svgrepo-com.svg" type="image/svg+xml" class="navicon walleticon"></object>
+                    <!-- <object data="/DEDUSTIMGS/wallet-svgrepo-com.svg" type="image/svg+xml" class="navicon walleticon"></object> -->
+                    <p class="connectwallet">Connect wallet</p>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container2">
+            <h1>Pools</h1>
+            <div class="depositliquiditycontainer">
+                <h1>Deposit liquidity,earn fees and get boost rewards</h1>
+                <button class="depositliquiditybtn">Deposit liquidity</button>
+            </div>
+               <a href="" class="createpoolcontainerM">
+                <button class="createpoolbtn">
+                <svg fill="" width="64px" height="64px" viewBox="-4.5 -4.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-plus" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M8.9 6.9v-5a1 1 0 1 0-2 0v5h-5a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"></path></g></svg>                    <span>Create a pool</span>
+                 </button>
+            </a>
+            <div class="statscontainer">
+                <span class="stat stat1">
+                    <p>Total value locked</p> 
+                    <h1>$11.8M</h1>
+                </span>
+                <span class="stat stat2">
+                    <p>Volume(24h)</p>
+                    <h1>$1.16M</h1>
+                </span>
+                <span class="stat stat3">
+                    <p>Fees(24h)</p>
+                    <h1>$2.03K</h1>     
+                </span>
+            </div>
+        </div>
+        <div class="allpoolscontainer">
+            <button class="allpoolsbtn isSelected poolsbtn">
+                All pools (1527)
+            </button>
+            <button class="mypoolsbtn poolsbtn">My pools</button>
+            <a href="">
+                <button class="createpoolbtn">
+                <svg fill="" width="64px" height="64px" viewBox="-4.5 -4.5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-plus" stroke=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M8.9 6.9v-5a1 1 0 1 0-2 0v5h-5a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"></path></g></svg>                    <span>Create a pool</span>
+                 </button>
+            </a>
+        </div>
+
+        <div class="tablecontainer">
+            <div class="my-pools-container">
+                <h3>No wallet connected</h3>
+                <p>Log in to mange your positions and claim rewards</p>
+                <button class="connect-wallet-btn">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="#f5f5f5" xmlns="http://www.w3.org/2000/svg">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+                <g id="SVGRepo_iconCarrier"> <path d="M20.97 16.08C20.73 18.75 18.8 20.5 16 20.5H7C4.24 20.5 2 18.26 2 15.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.51 16.75 3.55C19.14 3.83 20.76 5.5 20.97 7.92C21 8.21 20.76 8.45 20.47 8.45H18.92C17.96 8.45 17.07 8.82 16.43 9.48C15.67 10.22 15.29 11.26 15.38 12.3C15.54 14.12 17.14 15.55 19.04 15.55H20.47C20.76 15.55 21 15.79 20.97 16.08Z" fill="#f5f5f5"/> <path d="M22.0002 10.9692V13.0292C22.0002 13.5792 21.5602 14.0292 21.0002 14.0492H19.0402C17.9602 14.0492 16.9702 13.2592 16.8802 12.1792C16.8202 11.5492 17.0602 10.9592 17.4802 10.5492C17.8502 10.1692 18.3602 9.94922 18.9202 9.94922H21.0002C21.5602 9.96922 22.0002 10.4192 22.0002 10.9692Z" fill="#f5f5f5"/> </g>
+                </svg> 
+                <span>Connect Wallet</span>
+            </button>
+            </div>
+            <div class="search-container-buttons">
+                <div class="search-bar" >
+                    <span>All coins</span>
+                    <img src="../DEDUSTIMGS/dropdown-arrow-svgrepo-com.svg" alt="lightningicon">
+                </div>
+                <div class="buttons-container">
+                    <button class="boosted-btn" data-description="Pools with boost rewards from various projects">
+                        <!-- <img src="../DEDUSTIMGS/lightning-bolt-svgrepo-com.svg" alt="rocketicon"> -->
+                         <svg width="64px" height="64px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="#777575" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <polygon points="9.25 1.75,2.75 9.25,7.25 9.75,6.75 14.25,13.25 6.75,8.75 6.25"/> </g>
+                        </svg>
+                        <span >Boosted</span>
+                    </button>
+                    <button class="promo-btn" data-description="Promo pools with extra rewards">
+                        <svg fill="#777575" width="64px" height="64px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <path d="M97.85352,185.8335c-5.04,15.11914-17.16211,26.26318-35.05664,32.228a88.27924,88.27924,0,0,1-25.30665,4.44825,4.0002,4.0002,0,0,1-4-4,88.27688,88.27688,0,0,1,4.44825-25.30665C43.90332,175.30859,55.04785,163.186,70.167,158.14648a3.99987,3.99987,0,1,1,2.5293,7.58936c-24.91016,8.30371-29.93945,37.49268-30.95215,48.52,11.02344-1.01172,40.21582-6.04,48.51953-30.95215a4.00018,4.00018,0,0,1,7.58985,2.52979ZM198.71,108.20117l-10.1416,10.1416v62.91211a11.92374,11.92374,0,0,1-3.51367,8.48487L152.71191,222.082A11.99995,11.99995,0,0,1,132.46,215.9502l-8.14429-40.72315-43.54223-43.542L40.05078,123.54a11.99947,11.99947,0,0,1-6.13281-20.252l32.3418-32.3418a11.925,11.925,0,0,1,8.48535-3.51465h62.91162l10.14209-10.14258c27.30078-27.30078,55.10351-26.54,65.78906-24.94531a11.90048,11.90048,0,0,1,10.06836,10.06738C225.251,53.09766,226.01172,80.89941,198.71,108.20117ZM41.61914,115.69531l39.81152,7.9624,48.2262-48.22607H74.74512a3.97492,3.97492,0,0,0-2.8291,1.17188l-32.3418,32.3413a4.00043,4.00043,0,0,0,2.04492,6.75049Zm138.94922,10.64746-48.22669,48.227,7.962,39.811a4.00088,4.00088,0,0,0,6.75195,2.04394l32.3418-32.34179a3.97415,3.97415,0,0,0,1.1709-2.82813ZM193.05371,102.544c24.72852-24.729,24.10547-49.46436,22.69043-58.95118a3.946,3.946,0,0,0-3.33594-3.33691c-9.48925-1.415-34.22461-2.03809-58.95312,22.69043l-11.31262,11.3125-.00135.00146L88.40234,128,128,167.59814l53.73962-53.73974.00086-.001Z"/> </g>
+                        </svg>
+                        <span>Promo</span>
+                    </button>
+                    <button class="stable-btn" data-description="Stable pools with coins of near-equal value">
+                       <svg width="94px" height="94px" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve" fill="" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g id="SVGRepo_iconCarrier"> <path fill="" fill-opacity="1" stroke-width="0.5" stroke-linejoin="round" d="M 38.7916,15.8334C 40.5405,15.8334 40.375,17.2511 40.375,19L 40.4832,22.422L 58.8399,27.5931L 58.0738,30.6657L 56.0774,30.168L 64.9166,47.5C 64.9166,50.5606 59.8717,53.0417 54.625,53.0417C 49.3783,53.0417 44.3333,50.5606 44.3333,47.5L 52.3887,29.2483L 40.6112,26.3118L 41.5394,53.9324C 47.6545,54.3801 52.25,56.2923 52.25,58.5833L 25.3333,58.5833C 25.3333,56.2923 29.9288,54.3801 36.0439,53.9324L 37.1289,25.4436L 23.8151,22.1241L 31.6666,40.375C 31.6666,43.4356 26.6217,45.9167 21.375,45.9167C 16.1283,45.9167 11.0833,43.4356 11.0833,40.375L 20.1264,21.2044L 18.13,20.7066L 18.8961,17.634L 37.2057,22.0007L 37.2083,19C 37.2083,17.2511 37.0427,15.8334 38.7916,15.8334 Z M 61.2191,47.5L 55.4166,33.1384L 55.4166,47.5L 61.2191,47.5 Z M 48.0308,47.5L 53.8333,47.5L 53.8333,33.1384L 48.0308,47.5 Z M 27.9691,40.3751L 22.1666,26.0135L 22.1666,40.3751L 27.9691,40.3751 Z M 14.7808,40.3751L 20.5833,40.3751L 20.5833,26.0134L 14.7808,40.3751 Z "/> </g>
+                        </svg>
+                        <span>Stable</span>
+                    </button>
+                </div>
+                <div class="resetbtncontainer"><button class="hidden-reset-btn">Reset all</button></div>
+            </div>
+<!-- ==========================TABLE======================================== -->
+        <div class="table-container2">
+            <div class="table-head-container">
+                <div class="container pair-container"><span class="pairs">Pair</span></div>
+                <div class="container volume-container"><span class="volumes">Volume (24h)</span><img src="../DEDUSTIMGS/down-arrow-svgrepo-com.svg" alt="downarrowicon"></div>
+                <div class="container tvl-container"><span class="tvls">TVL</span></div>
+                <div class="container fee-container"><span class="feess">Fees(24h)</span></div>
+                <div class="container apr-container"><span class="aprs">APR</span></div>
+            </div>
+            <div class="table-body-container">
+                <a href="" class="table-row table-row1">
+                    <div class="token-pairs">
+                        <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/usdt.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            TON/USDT
+                        </span>
+                        <span class="promo">
+                            <p>promo</p>
+                            <div class="rocket"></div>
+                        </span>
+                    </div>
+                    <span class="volume">
+                        $376.41K
+                    </span>
+                    <span class="tvl">
+                        $1.77M
+                    </span>
+                    <span class="fees">
+                        $376.41
+                    </span>
+                    <span class="apr">
+                        6.22%
+                    </span>
+                </a>
+                <a href="" class="table-row table-row2">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/px.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            PX/TON
+                        </span>
+                         <span class="promo">
+                            <p>promo</p>
+                            <div class="rocket"></div>
+                        </span>
+                    </div>
+                    <span class="volume">
+                        $33.1K
+                    </span>
+                    <span class="tvl">
+                        $252.16K
+                    </span>
+                    <span class="fees">
+                        $330.97
+                    </span>
+                    <span class="apr">
+                        38.33%
+                    </span>
+                </a>
+                <a href="" class="table-row table-row3">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/tston.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/usdt.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            tsTON/USDT
+                        </span>
+                         <span class="promo">
+                            <p>promo</p>
+                            <div class="rocket"></div>
+                        </span>
+                    </div>
+                    <span class="volume">
+                        $1.95K
+                    </span>
+                    <span class="tvl">
+                        $145.23K
+                    </span>
+                    <span class="fees">
+                        $4.87
+                    </span>
+                    <span class="apr">0.98</span>
+                </a>
+                <a href="" class="table-row table-row4">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/build.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            BUILD/TON
+                        </span>
+                         <span class="promo">
+                            <p>promo</p>
+                            <div class="rocket"></div>
+                        </span>
+                    </div>
+                    <span class="volume">$115.13</span>
+                    <span class="tvl">$83.32K</span>
+                    <span class="fees">$0.29</span>
+                    <span class="apr">0.1%</span>
+                </a>
+                <a href="" class="table-row table-row5">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/stton-bemo.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/usdt.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            stTON/USDT
+                        </span>
+                         <span class="promo">
+                            <p>promo</p>
+                            <div class="rocket"></div>
+                        </span>
+                    </div>
+                    <span class="volume">$22.23</span>
+                    <span class="tvl">$3.84k</span>
+                    <span class="fees">$0.06</span>
+                    <span class="apr">0.42%</span>
+                </a>
+                <a href="" class="table-row table-row6">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/tonio.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            Tonio/TON
+                        </span>
+                    </div>
+                    <span class="volume">$156.62K</span>
+                    <span class="tvl">$13.94K</span>
+                    <span class="fees">$391.56</span>
+                    <span class="apr">819.99%</span>
+                </a>
+                <a href="" class="table-row table-row7">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/tonnel.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/usdt.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            TONNEL/USDT
+                        </span>
+                    </div>
+                    <span class="volume">$61.21K</span>
+                    <span class="tvl">$213.03K</span>
+                    <span class="fees">$153.04</span>
+                    <span class="apr">20.98%</span>
+                </a>
+                <a href="" class="table-row table-row8">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/tonnel.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            TONNEL/TON
+                        </span>
+                    </div>
+                    <span class="volume">$42.15k</span>
+                    <span class="tvl">$68.57k</span>
+                    <span class="fees">$105.37</span>
+                    <span class="apr">44.87%</span>
+                </a>
+                <a href="" class="table-row table-row9">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/virus.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/ton.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            VIRUS/TON
+                        </span>
+                    </div>
+                    <span class="volume">$37.03K</span>
+                    <span class="tvl">$284.36K</span>
+                    <span class="fees">$92.57</span>
+                    <span class="apr">9.51%</span>
+                </a>
+                <a href="" class="table-row table-row10">
+                    <div class="token-pairs">
+                         <div class="pair-img-container">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/virus.webp" alt="">
+                            <img src="../DEDUSTIMGS/DeDust.ioImages/tonnel.webp" alt="">
+                        </div>
+                        <span class="pair-name-container">
+                            VIRUS/TONNEL
+                        </span>
+                    </div>
+                    <span class="volume last">$32.5K</span>
+                    <span class="tvl last">$584.26K</span>
+                    <span class="fees last">$81.25</span>
+                    <span class="apr last">4.06%</span>
+                </a>
+            </div>
+
+            </div>   
+            
+            <div class="table-navigation">
+                <div class="table-navigation-items">
+                    <button class="move-leftbtn nav-btn notActive"><svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon1" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="" stroke="#000000" stroke-width="0.01024" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+    
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                        <g id="SVGRepo_iconCarrier">
+    
+                        <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill=""/>
+    
+                        </g>
+    
+                        </svg>
+                    </button>
+
+                    <button class="nav-btn isActive">
+                        1
+                    </button>
+                    <button class="nav-btn">
+                        2
+                    </button>
+                    <button class="nav-btn">
+                        3
+                    </button>
+                    <span class="empty">
+                        ...
+                    </span>
+                    <button class="nav-btn">
+                        154
+                    </button>
+
+
+                    
+                    <button class="move-rightbtn nav-btn"><svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon2" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.01024">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+    
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+    
+                        <g id="SVGRepo_iconCarrier">
+    
+                        <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill=""/>
+    
+                        </g>
+    
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    <!--FOOTER -->
+
+         <div class="container3">
+        <div class="joinourcommunitycontainer">
+            <div class="sociallinkscontainer">
+                <p>Join Our community</p>
+                <div class="sociallinks">
+                     <span class="tg socials">
+                    <img src="../DEDUSTIMGS/telegram-logo-thin-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="x socials">
+                        <img src="../DEDUSTIMGS/x-social-media-black-icon.svg" alt="">
+                    </span>
+                    <span class="github socials">
+                        <img src="../DEDUSTIMGS/github-svgrepo-com.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="themecontainer">
+                    <span class="lightmode mode">
+                        <img src="../DEDUSTIMGS/sun-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="darkmode mode">
+                        <img src="../DEDUSTIMGS/night-svgrepo-com.svg" alt="">
+                    </span>
+                </div>
+        </div>    
+            <ul class="users-list">
+                <li>
+                    <h3>Users</h3>
+                </li>
+                <li><a href="">Help</a></li>
+                <li><a href="https://www.figma.com/proto/u8XTSf8Rs7MRboXqW8XhfN/DeDust-Brand-Kit?page-id=187%3A54&node-id=217-710&viewport=1012%2C2233%2C0.62&t=hDlpQ8QwDFYqghgC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=217%3A710&hide-ui=1">Brand kit</a></li>
+                <li><a href="">Terms of use</a></li>
+       </ul>
+            <ul class="Projects-list">
+                <li><h3>Projects</h3></li>
+                <li><a href="">Docs</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf4g-MB6BBYi8SVcloxAEc4tXQ-4034ngTEGjIsyaqGscjl8w/viewform">Listing</a></li>
+                <li><a href="">Boosts</a></li>
+          </ul>
+            <ul class="analytics-list">
+                <li><h3>Analytics</h3></li>
+                <li><a href="https://www.geckoterminal.com/ton/dedust/pools">GeckoTerminal</a></li>
+                <li><a href="https://dexscreener.com/ton/dedust">DEX Screener</a></li>
+                <li><a href="https://coinmarketcap.com/exchanges/dedust">CoinMarketCap</a></li>
+                <li><a href="https://defillama.com/protocol/dedust">DefiLlama</a></li>
+            </ul>
+
+            
+
+            <div class="mobileulcontainer">
+                <ul class="users-list">
+                    <li>
+                        <h3>Users</h3>
+                    </li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="https://www.figma.com/proto/u8XTSf8Rs7MRboXqW8XhfN/DeDust-Brand-Kit?page-id=187%3A54&node-id=217-710&viewport=1012%2C2233%2C0.62&t=hDlpQ8QwDFYqghgC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=217%3A710&hide-ui=1">Brand kit</a></li>
+                    <li><a href="">Terms of use</a></li>
+                </ul>
+                <ul class="Projects-list">
+                    <li><h3>Projects</h3></li>
+                    <li><a href="">Docs</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf4g-MB6BBYi8SVcloxAEc4tXQ-4034ngTEGjIsyaqGscjl8w/viewform">Listing</a></li>
+                    <li><a href="">Boosts</a></li>
+            </ul>
+                <ul class="analytics-list">
+                    <li><h3>Analytics</h3></li>
+                    <li><a href="https://www.geckoterminal.com/ton/dedust/pools">GeckoTerminal</a></li>
+                    <li><a href="https://dexscreener.com/ton/dedust">DEX Screener</a></li>
+                    <li><a href="https://coinmarketcap.com/exchanges/dedust">CoinMarketCap</a></li>
+                    <li><a href="https://defillama.com/protocol/dedust">DefiLlama</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="mobileFooterAdditionsContainer">
+                <div class="wrapper1">
+                    <div class="themecontainerM">
+                        <span class="lightmodeM Mmode">
+                            <img src="../DEDUSTIMGS/sun-svgrepo-com.svg" alt="">
+                        </span>
+                        <span class="darkmodeM Mmode">
+                            <img src="../DEDUSTIMGS/night-svgrepo-com.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="globe-language-container">
+                        <span class="earthicon-bg bgicon"><object data="../DEDUSTIMGS/globe-svgrepo-com.svg" type="image/svg+xml" class="navicon globeicon"></object></span>
+                        <p class="langauageM">English</p>
+                    </div>
+                </div>
+                <div class="wrapper2">
+                     <a href=""><img src="../DEDUSTIMGS/dust.logo.gif" alt=""></a>
+                    <span class="price"><a href="">$1.64</a></span>
+                    <button class="buydustbtnM"><a href="">Buy Dust</a></button>
+                </div>
+
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <p>Built by</p>
+            <span>
+                <img src="../DEDUSTIMGS/cube3D.svg" alt="">
+                Arizona
+            </span>
+        </footer>
+    </div>
+    <div class="overlay"></div>
+     <div class="langauagecontainer">
+            <div class="touchbarcontainer"><span class="touchbar"></span></div>
+        <h1>Choose a language</h1>
+        <div class="languagebtncontainer">
+        <button class="languageBtn isChosen">English</button>
+        <button class="languageBtn">Русский</button>
+        <button class="languageBtn">Українська</button>
+        </div>
+        <button class="savebtn">save</button>
+        <button class="closebtn">&times;</button>
+     </div>
+
+     <div class="navbarsearchcontainer">
+         <div class="inputcontainer">
+            <svg width="160px" height="160px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"/>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#c80e0e" stroke-width="0.24000000000000005"/>
+                <g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#949494" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>  
+            </svg>
+            <input type="text" placeholder="Enter a wallet address or domain">
+            <button class="clearbtn">Clear</button>
+        </div>
+     </div>
+        
+     <script src="../JAVASCRIPT/index.js"></script>
+    <script src="../JAVASCRIPT/pools.js"></script>
+</body>
+</html>

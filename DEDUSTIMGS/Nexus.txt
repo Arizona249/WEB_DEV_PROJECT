@@ -1,0 +1,26 @@
+8880284
+source ~/.bashrc
+
+nexus-network start --node-id 8880284
+
+
+root@DESKTOP-MVEUGP1:~# openssl s_client -connect objects.githubusercontent.com:443
+CONNECTED(00000003)
+400766E21C7F0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 0 bytes and written 331 bytes
+Verification: OK
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+root@DESKTOP-MVEUGP1:~#

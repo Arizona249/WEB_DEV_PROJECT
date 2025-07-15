@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .app-loader__transform-wrapper {
+      perspective: 800px;
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+}
+
+.app-loader__scale-wrapper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: cube-rotate 3s linear infinite;
+}
+
+.app-loader__cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.app-loader__cube-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Face placement */
+.app-loader__cube-side--front   { transform: rotateY(  0deg) translateZ(100px); }
+.app-loader__cube-side--back    { transform: rotateY(180deg) translateZ(100px); }
+.app-loader__cube-side--right   { transform: rotateY( 90deg) translateZ(100px); }
+.app-loader__cube-side--left    { transform: rotateY(-90deg) translateZ(100px); }
+.app-loader__cube-side--top     { transform: rotateX( 90deg) translateZ(100px); }
+.app-loader__cube-side--bottom  { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes cube-rotate {
+  0%   { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+    </style>
+</head>
+<body>
+    <svg style="width:0; height:0;" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="cube_side">
+            <rect width="50" height="50" fill="#FC9800"/>
+            <rect y="150" width="50" height="50" fill="#FC9800"/>
+            <rect y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect y="50" width="50" height="50" fill="#FFBD1E"/>
+            <rect x="150" width="50" height="50" fill="#FC9800"/>
+            <rect x="150" y="150" width="50" height="50" fill="#FFAA00"/>
+            <rect x="150" y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="150" y="50" width="50" height="50" fill="#FFAA00"/>
+            <rect x="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="100" y="150" width="50" height="50" fill="#FC9800"/>
+            <rect x="100" y="100" width="50" height="50" fill="#FFBD1E"/>
+            <rect x="100" y="50" width="50" height="50" fill="#FFB304"/>
+            <rect x="50" width="50" height="50" fill="#FFAA00"/>
+            <rect x="50" y="150" width="50" height="50" fill="#FFB304"/>
+            <rect x="50" y="100" width="50" height="50" fill="#FFAA00"/>
+            <rect x="50" y="50" width="50" height="50" fill="#FC9800"/>
+        </g>
+        <g id="cube_top">
+            <rect width="50" height="50" fill="#FFE929"/>
+            <rect y="150" width="50" height="50" fill="#FFE929"/>
+            <rect y="100" width="50" height="50" fill="#FFE65E"/>
+            <rect y="50" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" y="150" width="50" height="50" fill="#FFE65E"/>
+            <rect x="150" y="100" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="150" y="50" width="50" height="50" fill="#FFE65E"/>
+            <rect x="100" width="50" height="50" fill="#FFE36A"/>
+            <rect x="100" y="150" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="100" y="100" width="50" height="50" fill="#FFE36A"/>
+            <rect x="100" y="50" width="50" height="50" fill="#FFDB2E"/>
+            <rect x="50" width="50" height="50" fill="#FFE65E"/>
+            <rect x="50" y="150" width="50" height="50" fill="#FFE929"/>
+            <rect x="50" y="100" width="50" height="50" fill="#FFE65E"/>
+            <rect x="50" y="50" width="50" height="50" fill="#FFE929"/>
+        </g>
+    </svg>
+        <div class="app-loader__transform-wrapper">
+        <div class="app-loader__scale-wrapper">
+            <div class="app-loader__cube">
+                <svg class="app-loader__cube-side app-loader__cube-side--front" viewBox="0 0 200 200">
+                    <use href="#cube_side"/>
+                </svg>
+                <svg class="app-loader__cube-side app-loader__cube-side--back" viewBox="0 0 200 200">
+                    <use href="#cube_side"/>
+                </svg>
+                <svg class="app-loader__cube-side app-loader__cube-side--right" viewBox="0 0 200 200">
+                    <use href="#cube_side"/>
+                </svg>
+                <svg class="app-loader__cube-side app-loader__cube-side--left" viewBox="0 0 200 200">
+                    <use href="#cube_side"/>
+                </svg>
+                <svg class="app-loader__cube-side app-loader__cube-side--top" viewBox="0 0 200 200">
+                    <use href="#cube_top"/>
+                </svg>
+                <svg class="app-loader__cube-side app-loader__cube-side--bottom" viewBox="0 0 200 200">
+                    <use href="#cube_top"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  const scaleWrapper = document.querySelector('.app-loader__scale-wrapper');
+  let angle = 0;
+
+  setInterval(() => {
+    angle = (angle + 1) % 360;
+    scaleWrapper.style.transform = `rotateY(${angle}deg)`;
+  }, 30); // ~33 FPS
+</script>
+
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrance Animation</title>
+  <style>
+    body {
+      background-color: #0f0f0f; /* Dark background similar to dedust.io */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .animated-container {
+      width: 300px;
+      height: 300px;
+      background-image: url('https://dedust.io/images/graphics/coins.dark.webp'); /* Use the background image you found */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      /* Start with initial hidden state */
+      opacity: 0;
+      transform: scale(0.8) translateY(50px);
+      animation: fadeSlideIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="animated-container"></div>
+
+</body>
+</html> -->

@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url("../Manrope-VariableFont_wght.ttf");
+}
+
+:root{
+    --smallTextColor:#fa6418;
+    --bigTextColor:#fffff5;
+    --logoFontSize:25px;
+    --iconColor:#414141;
+    --bgColor:#000000;
+    --borderSample:2px solid black;
+    --borderSample1:2px solid rgb(255, 0, 0);
+    --borderSample2:2px solid rgb(0, 255, 0);
+    --biggerIconSize:50px;
+    --mediumIconSize:25px;
+    --smallIconSize:20px;
+    --bigfontSize:30px;
+    --fontSize32:32px;
+    --mediumFontSize:16px;
+    --smallFontSize:10px;
+    --logoFontSize:18px;
+    --containerBgColor:#1e1e1e;
+    --containerBgColorHover:#414141;
+    --containerPColor:#777575;
+    --containerBigTextSize:24px;
+    --containerPTextSize:16px;
+    --containerPTextSize2:14px;
+    --dustContainerSTextSize:12px;
+    --tokenValuationFontSize:20px;
+    --hrBorder:0.5px solid #2f2f2f;
+    --Color2f:#2f2f2f;
+    --semiBoldFontWeight:600;
+    --footerListColor:#f5f5f5;
+    --feintTradeMarkColor:#3c3b3b;
+    --buttonColor:#ec502c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Poppins',sans-serif; */
+    font-family:'Manrope',sans-serif;
+    text-decoration: none;
+    /* border: 2px solid; */
+}
+.maincontainer{
+    /* padding: 0 8rem; */
+        padding: 0 clamp(16px,10%,8rem);
+
+    /* border: var(--borderSample2); */
+    /* max-width: 80vw; */
+    margin: 0;
+}
+.container_swap_container{
+    /* border: var(--borderSample1); */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 90vh;
+    padding-bottom: 20px;
+
+    /* padding: 0 8rem; */
+    
+}
+.container2{
+    /* padding: 30px; */
+    /* border: var(--borderSample2); */
+    min-height: calc(78px-100vh);
+    color: var(--bigTextColor);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 20px;
+    gap: 20px;
+    /* width: 100%; */
+}
+.container2 img,svg{
+    width: var(--smallIconSize);
+}
+/* .container2 div{
+    border: var(--borderSample2);
+} */
+.swap_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: var(--borderSample1); */
+    /* margin-bottom: 12px; */
+    padding: 24px 12px 0px 20px ;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.icons button{
+    width: 36px;
+    aspect-ratio: 1;
+    background-color: var(--bgColor);
+    border: none;
+    border-radius: 6px;
+    transition: all 500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swap_icons h1{
+    font-size: var(--fontSize32);
+}
+.beta{
+    /* border: var(--borderSample2); */
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 6px 8px 6px 20px;
+    min-height: 48px;
+    align-items: center;
+    /* margin-bottom: 16px; */
+    font-weight: var(--semiBoldFontWeight);
+    background-image: linear-gradient(to right,rgb(236, 80, 44), rgb(255, 143, 57));
+}
+.beta .beta-literals{
+    display: inline-flex;
+    background-color: white;
+    padding: 2px 0px;
+    color: var(--smallTextColor);
+    border-radius: 6px;
+    width: 40px;
+    height: 23.6px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+.beta .beta-paragraphM{
+    display: none;
+}
+.beta img{
+  transform: rotate(270deg);
+}
+.swapcontainer{
+    /* border: var(--borderSample2); */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--containerBgColor);
+    padding: 16px 12px;
+    height: 205px;
+    border-radius: var(--containerPTextSize);
+    gap: 20px;
+}
+.swapone{
+    /* border: var(--borderSample2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* order: 2; */
+}
+.digitscontainer{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.digitscontainer input{
+    width: 100%;
+    background-color: var(--containerBgColor);
+    border: none;
+    outline: none;
+    padding: 4px 0;
+    font-size: var(--logoFontSize);
+    color: var(--footerListColor);
+    font-weight: var(--semiBoldFontWeight);
+    caret-color: #4ba0ff;
+}
+.digitscontainer p{
+    font-size: var(--containerPTextSize2);
+    color: #737878;
+    font-weight: var(--semiBoldFontWeight);
+}
+.digitscontainer input::-webkit-inner-spin-button,
+.digitscontainer input::-webkit-outer-spin-button{
+    appearance: none;
+}
+.swaptwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    /* order: -1; */
+}
+.swaptwo span{
+    font-size: var(--tokenValuationFontSize);
+    font-weight: var(--semiBoldFontWeight);
+}
+/* ======WORKING OF THE EXCHANGE BUTTON ======= */
+/* #swapone{
+    order: 1;
+}
+#swaptwo{
+    order: 3;
+} */
+.rearrange #swapone{
+    order: 3;
+}
+.rearrange #swapotwo{
+    order: 1;
+}
+.rearrange .exchangeiconcontainer{
+    order: 2;
+}
+/* ================================== */
+.exchangeiconcontainer{
+    /* border: var(--borderSample2); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* order: 2; */
+}
+.exchangeiconcontainer span{
+    flex-grow: 1;
+    /* aspect-ratio: 1; */
+    border: var(--hrBorder);
+    height: 0px;
+}
+.exchangeiconcontainer button{
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: var(--dustContainerSTextSize);
+    border: none;
+    outline: none;
+    background-color: var(--containerBgColor);
+    transition: all 0.3ms ease-in-out;
+    cursor: pointer;
+}
+.connectwalletbtn{
+    /* border: var(--borderSample2); */
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(236, 80, 44, 0.25) 0px 4px 8px 0px;
+    background-color: var(--buttonColor);
+    color: var(--footerListColor);
+    font-size: var(--containerPTextSize);
+    font-weight: var(--semiBoldFontWeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+/* ============Hover State============-=== */
+
+.icons button:hover{
+    background-color: var(--Color2f);
+
+}
+.exchangeiconcontainer button:hover{
+    background-color: var(--Color2f);
+}
+.connectwalletbtn:hover{
+    background-color: #f17b61;
+}
+
+/* table view media query */
+@media(max-width:950px){
+     .maincontainer{
+        padding: unset;
+        padding:  0 16px;
+        margin-bottom: calc(70px + 59px); /* height of nav bar plus height of button so i can see the footer*/
+        overflow-x: hidden;
+        /* border: var(--borderSample2); */
+     }
+     .container_swap_container{
+         /* display: flex; */
+        /* align-items: ; */
+        justify-content: center;
+        min-height: 90vh;
+        padding-bottom: 20px;
+        /* border: var(--borderSample2); */
+     }
+     .container2{
+        /* padding: 30px; */
+        /* border: var(--borderSample2); */
+        /* min-height: calc(78px-100vh); */
+        min-height: 30vh;
+        color: var(--bigTextColor);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-bottom: 20px;
+        gap: 20px;
+        
+        /* width: 100%; */
+    }
+    .connectwalletbtn{
+    /* border: var(--borderSample2); */
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(236, 80, 44, 0.25) 0px 4px 8px 0px;
+    background-color: var(--buttonColor);
+    color: var(--footerListColor);
+    font-size: var(--containerPTextSize);
+    font-weight: var(--semiBoldFontWeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    z-index: 3;
+    /* left: 50%;
+    transform: translateX(-50%);  this is to center as well as this */
+    left: 0;
+    right: 0;
+    margin: auto;  
+    width: 100%;
+    
+}
+.swapcontainer{
+    /* border: var(--borderSample2); */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--containerBgColor);
+    padding: 16px 12px;
+    height: 205px;
+    border-radius: var(--containerPTextSize);
+    gap: 20px;
+}
+    
+}
+@media(max-width:768px){
+     .maincontainer{
+        padding: unset;
+        padding:  0 16px;
+        margin-bottom: calc(70px + 59px); /* height of nav bar plus height of button so i can see the footer*/
+        overflow-x: hidden;
+        /* border: var(--borderSample2); */
+     }
+     .container_swap_container{
+         /* display: flex; */
+        /* align-items: ; */
+        justify-content: center;
+        min-height: 90vh;
+        padding-bottom: 20px;
+        /* border: var(--borderSample2); */
+     }
+     .container2{
+        /* padding: 30px; */
+        /* border: var(--borderSample2); */
+        /* min-height: calc(78px-100vh); */
+        min-height: 30vh;
+        color: var(--bigTextColor);
+        display: flex;
+        flex-direction: column;
+        width: 86%;
+        padding-bottom: 20px;
+        gap: 20px;
+        
+        /* width: 100%; */
+    }
+    .connectwalletbtn{
+    /* border: var(--borderSample2); */
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(236, 80, 44, 0.25) 0px 4px 8px 0px;
+    background-color: var(--buttonColor);
+    color: var(--footerListColor);
+    font-size: var(--containerPTextSize);
+    font-weight: var(--semiBoldFontWeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    z-index: 3;
+    position: fixed;
+    bottom: 8dvh;
+    /* left: 50%;
+    transform: translateX(-50%);  this is to center as well as this */
+    left: 0;
+    right: 0;
+    margin: auto;  
+    width: 96%;
+    
+}
+.swapcontainer{
+    /* border: var(--borderSample2); */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--containerBgColor);
+    padding: 16px 12px;
+    height: 205px;
+    border-radius: var(--containerPTextSize);
+    gap: 20px;
+}
+    
+}
+
+
+@media(max-width:540px){
+    .connectwalletbtn{
+        bottom: 10dvh;
+    }
+}
+
+
+@media(max-width:480px){
+       .container_swap_container{
+        min-height: 100dvh;
+        padding-bottom: 20px;
+        /* border: var(--borderSample2); */
+        position: relative;
+        left: -14px;
+        width: calc(100% + 28px);
+        /* display: unset; */
+        
+    }
+    .container2{
+         /* border: var(--borderSample2); */
+        width: 100%;
+    }
+    .beta{
+        /* border: var(--borderSample2); */
+        display: flex;
+        justify-content: space-between;
+        border-radius: unset;
+        padding: 15px 20px;
+        min-height: 48px;
+        align-items: center;
+        /* margin-bottom: 16px; */
+        font-weight: var(--semiBoldFontWeight);
+        background-image: linear-gradient(to right,rgb(236, 80, 44), rgb(255, 143, 57));
+    }
+    .beta-paragraph{
+        display: none;
+    }
+    .beta .beta-paragraphM{
+        display: unset;
+        /* border: var(--borderSample2); */
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-columns: auto;
+        grid-row-gap: 5px;
+    }
+    .beta :is(img){
+        /* border: var(--borderSample1); */
+        width: 30px;
+        height: 30px;
+    }
+    .beta .beta-literals{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: end;
+        justify-self: center;
+        font-size: var(--containerPTextSize2);
+    }
+    .beta p:nth-child(2){
+        /* border: var(--borderSample); */
+        grid-column: 1/4;
+        font-size: var(--containerPTextSize2);
+        font-weight: 500;
+    }
+
+    .connectwalletbtn{
+    /* border: var(--borderSample2); */
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: rgba(236, 80, 44, 0.25) 0px 4px 8px 0px;
+    background-color: var(--buttonColor);
+    color: var(--footerListColor);
+    font-size: var(--containerPTextSize);
+    font-weight: var(--semiBoldFontWeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    z-index: 3;
+    position: fixed;
+    bottom: 8%;
+    /* left: 50%;
+    transform: translateX(-50%);  this is to center as well as this */
+    left: 0;
+    right: 0;
+    margin: auto;  
+    width: 96%;
+    
+}
+.swapcontainer{
+    /* border: var(--borderSample2); */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--containerBgColor);
+    padding: 16px 12px;
+    height: 210px;
+    border-radius: 20px;
+    gap: 20px;
+}
+}
+
+@media(max-width:414px){
+    .connectwalletbtn{
+        /* bottom: min(10%,10dvh); */
+    }
+}
+@media(max-width:414px) and (max-height:740px){
+    .connectwalletbtn{
+        bottom: min(10%,10dvh);
+    }
+}
+
+@media(max-width:380px){
+    .connectwalletbtn{
+        bottom: 10%;
+    }
+}
+@media(max-width:350px){
+    .connectwalletbtn{
+        bottom: 8%;
+    }
+}
+@media(max-width:330px){
+    .connectwalletbtn{
+        bottom: 14%;
+    }
+}
+@media(max-width:320px){
+    .connectwalletbtn{
+        bottom: 12%;
+    }
+}
+@media(max-width:320px) and (max-height:480px){
+    .connectwalletbtn{
+        bottom: 14%;
+    }
+}

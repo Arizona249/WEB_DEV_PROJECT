@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;  
+    background-color: #ebebf6; 
+}
+.socials{
+    display: flex;
+    /* border: 2px solid black; */
+    gap: 20px;
+
+}
+.socials a{
+    background-color: white;
+    padding: 1em;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 10px #7f7676;
+    /* transition: 200ms all ease-in-out; */
+    /* background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); */
+}
+.socials a svg{
+    height: 32px;
+}
+.socials a::before{
+   content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(10deg);
+  opacity: 0;
+  /* transition: 200ms all cubic-bezier(.42,0,.44,1.68); */
+  transition: 200ms all cubic-bezier(0.6,-0.23, 0.41, 1.56);
+  
+}
+.socials a::after{
+    content: "";
+    width: 0;
+    height: 0px;
+    position: absolute;
+    border-right: 8px solid rgba(255, 0, 0, 0);
+    border-left: 8px solid rgba(255, 0, 0, 0);
+    border-top: 10px solid var(--accent-color);
+    transform: translateY(0);
+    opacity: 0;
+    /* transition: 200ms all cubic-bezier(.42,0,.44,1.68); */
+    transition: 200ms all cubic-bezier(0.6,-0.23, 0.41, 1.56);
+}
+.socials a:hover{
+    background-color: var(--accent-color);
+    fill: white;
+}
+.socials a:hover::before{
+    transform: translateY(-65px) rotate(0deg);
+    opacity: 1;
+}
+.socials a:hover::after{
+    transform: translateY(-43.5px) rotate(0deg);
+    opacity: 1;
+}
+
+
+.mask{
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+   background-image:linear-gradient(90deg, rgb(69, 104, 220), rgb(175, 106, 179));
+    /* background-color: black; */
+    /* -webkit-mask-image: url("./DEDUSTIMGS/rocket-launch-thin-svgrepo-com.svg"); */
+    mask-image: url("../DEDUSTIMGS/rocket-launch-thin-svgrepo-com.svg");
+    /* -webkit-mask-size: contain; */
+    mask-size: contain;
+    /* -webkit-mask-position: center; */
+    mask-position: center;
+    /* -webkit-mask-repeat: no-repeat; */
+    mask-repeat: no-repeat;
+    /* -webkit-mask-mode:luminance ;
+    mask-mode: luminance; */
+}
+
