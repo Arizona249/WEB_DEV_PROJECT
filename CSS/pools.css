@@ -783,6 +783,9 @@
       overflow: hidden;
       background-image: none;
 }
+.lightmode .depositliquiditycontainer::before{
+   background-image: url("../DEDUSTIMGS/light-mode-img/pools.light.webp");
+}
    .depositliquiditycontainer::before{
          content: "";
          min-width: 550px;

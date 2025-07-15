@@ -80,9 +80,9 @@
 }
 .container2 img,svg{
     width: var(--smallIconSize);
+    /* border: var(--borderSample2); */
 }
 /* .container2 div{
-    border: var(--borderSample2);
 } */
 .swap_icons {
     display: flex;
@@ -161,6 +161,23 @@
     align-items: center;
     /* order: 2; */
 }
+
+.swaptwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    /* order: -1; */
+}
+.swaptwo img{
+    border-radius: 50%;
+    width: calc(var(--mediumIconSize ) + 1px);
+}
+.swaptwo span{
+    font-size: var(--tokenValuationFontSize);
+    font-weight: var(--semiBoldFontWeight);
+    color: var(--footerListColor);
+}
 .digitscontainer{
     display: flex;
     flex-direction: column;
@@ -186,18 +203,6 @@
 .digitscontainer input::-webkit-inner-spin-button,
 .digitscontainer input::-webkit-outer-spin-button{
     appearance: none;
-}
-.swaptwo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    /* order: -1; */
-}
-.swaptwo span{
-    font-size: var(--tokenValuationFontSize);
-    font-weight: var(--semiBoldFontWeight);
-    color: var(--footerListColor);
 }
 /* ======Logic OF THE EXCHANGE BUTTON ======= */
 /* #swapone{
