@@ -274,8 +274,10 @@ body{
     --bigTextColor:#1e1e1e;
 }
 .lightmode .poolcontainer{
-    background-image: url("../DEDUSTIMGS/light-mode-img/pool-contrast.light.jpg");
+    /* background-image: url("../DEDUSTIMGS/light-mode-img/pool-contrast.light.jpg"); */
     --bigTextColor:#1e1e1e;
+    background-image: url("../DEDUSTIMGS/light-mode-img/pool-contrast.light-removebg-preview.png");
+
     /* background-size: 50%;
     background-position: center; */
     

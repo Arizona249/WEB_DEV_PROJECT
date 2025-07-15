@@ -679,6 +679,19 @@
 .lightmode .isSelected{
    --footerListColor:#1e1e1e;
 }
+.lightmode .isClicked{
+   --footerListColor:#f5f5f5
+   color: var(--footerListColor) !important;
+}
+.lightmode .isClicked svg:not(.boosted-btn svg){
+   --footerListColor:#f5f5f5;
+   fill: var(--footerListColor);
+   
+}
+.lightmode .isClicked:first-child svg{
+   --footerListColor:#f5f5f5;
+    stroke: var(--footerListColor);
+ }
 .lightmode .createpoolbtn {
    --color2F:#ebebeb;
 }

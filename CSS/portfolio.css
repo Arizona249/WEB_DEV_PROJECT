@@ -206,6 +206,10 @@
 .lightmode .input-container{
     --color2F:#ebebeb;
 }
+.lightmode .input-container input{
+    --footerListColor:#1e1e1e;
+    font-weight: 500;
+}
 
 
 
